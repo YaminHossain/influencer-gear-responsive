@@ -99,4 +99,32 @@ Media Queries
   nav ul {
     padding: 0px;
   }
+  .banner {
+    flex-direction: column-reverse;
+    padding: 22px 20px 50px;
+    gap: 14px;
+  }
+  .banner-image{
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .banner-image img{
+    width: 100%;
+  }
+  .banner-head{
+  width: 100%;
+  }
+  .banner-head h1 {
+    font-size: 28px;
+  margin-bottom: 15px;  
+  text-align: center;  
+  }
+  .banner-head p{
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .banner-head button{
+    margin: 0px auto 50px;
+    display: block;
+  }
 }

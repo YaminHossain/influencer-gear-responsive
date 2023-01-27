@@ -1,0 +1,102 @@
+/* .................
+Universal Styles
+....................*/
+@import url("https://fonts.googleapis.com/css2?family=Edu+VIC+WA+NT+Beginner&family=Norican&family=Open+Sans&family=Pacifico&family=Poppins:wght@500&family=Roboto&display=swap");
+* {
+  margin: 0px;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  max-width: 1920px;
+  margin: 0px auto;
+  background-color: whitesmoke;
+}
+button {
+  cursor: pointer;
+}
+/*............
+ Navigation  menu
+........ */
+nav {
+  display: flex;
+  color: #3a3a3a;
+  justify-content: space-between;
+  align-items: center;
+  margin: 87px 120px 0px;
+}
+nav :visited {
+  color: #3a3a3a;
+}
+nav .nav-menu {
+  display: flex;
+  gap: 34px;
+}
+.nav-menu a {
+  text-decoration: none;
+}
+.nav-menu li {
+  list-style: none;
+}
+/* ............
+Navigation menu done
+.................. */
+
+/* .............
+banner section
+................. */
+.banner {
+  display: flex;
+  gap: 133px;
+  padding: 50px 120px 0px;
+  justify-content: space-between;
+}
+.banner-image {
+  background-image: url("../images/Circle\ design.svg");
+}
+.banner-head {
+  margin: auto 0px;
+  width: 582px;
+  height: 270px;
+}
+.banner-head h1 {
+  color: #3a3a3a;
+  font-weight: 700;
+  font-size: 52px;
+
+  margin-bottom: 16px;
+}
+.banner-head p {
+  color: #3a3a3a;
+  font-weight: 600;
+  font-size: 16px;
+  margin-bottom: 16px;
+}
+.banner-head button {
+  border: none;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  padding: 10px 24px;
+  color: white;
+  width: 196px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+}
+/* ....................
+banner section done
+...................... */
+
+/* .........................
+Media Queries
+............................ */
+@media screen and (max-width: 576px) {
+  .hidden {
+    display: none;
+  }
+  nav {
+    margin: 35px 16px 0px;
+  }
+  nav ul {
+    padding: 0px;
+  }
+}

@@ -60,7 +60,7 @@ banner section
 }
 .banner-head h1 {
   color: #3a3a3a;
-  font-weight: 700;
+  
   font-size: 52px;
 
   margin-bottom: 16px;
@@ -79,7 +79,7 @@ banner section
   color: white;
   width: 196px;
   height: 44px;
-  font-weight: 700;
+  
   font-size: 16px;
 }
 /* ....................
@@ -137,8 +137,8 @@ collections section starts here
 }
 .one-collection span {
   color: #5e6366;
-  font-weight: 700;
-  font-size: 14px; 
+  
+  font-size: 14px;
 }
 .one-collection .collection-description {
   color: #5e6366;
@@ -146,7 +146,7 @@ collections section starts here
 }
 .collections {
   display: grid;
-  grid-template-columns: repeat(3,auto);
+  grid-template-columns: repeat(3, auto);
   gap: 30px;
   justify-content: center;
 }
@@ -159,7 +159,7 @@ collections section starts here
   padding: 17px 15px;
   cursor: pointer;
 }
-.popular-collections>button{
+.popular-collections > button {
   border: none;
   background-color: #e02c6d;
   border-radius: 41px;
@@ -167,15 +167,51 @@ collections section starts here
   color: white;
   width: 196px;
   height: 44px;
-  font-weight: 700;
+  
   font-size: 16px;
   display: block;
-  margin:50px auto 0px;
-} 
+  margin: 50px auto 0px;
+}
 /* ..................
 collection section done
 ....................... */
 
+/* .......................
+bottom banner starts here 
+.......................... */
+.bottom-banner{
+  display: flex;
+  gap: 96px;
+  justify-content: center;
+  align-items: center;
+  margin: 100px 0px 100px;
+}
+.bottom-banner-description{
+  max-width:610px;;
+}
+.bottom-banner-description h1 {
+  
+  font-size: 38px;
+  color: #0a0826;
+}
+.bottom-banner-description p {
+  font-size: 16px;
+  color: #6c6c6c;
+  margin: 16px 0px;
+}
+.bottom-banner-description button {
+  border: none;
+  background-color: #e02c6d;
+  padding: 10px 24px;
+  color: white;
+  width: 150px;
+  height: 44px;
+  font-size: 16px;
+}
+
+/* .......................
+bottom banner ends here 
+.......................... */
 /* .................
 Media Queries 
 ............................*/
@@ -227,15 +263,29 @@ Media Queries
   .sponsors-logo {
     height: 20px;
   }
-  .collections{
+  .collections {
     grid-template-columns: 1fr;
     gap: 15px;
     margin: 0px 15px;
   }
-  .collections .one-collection{
+  .collections .one-collection {
     margin: 0px auto;
   }
-  .popular-collections>button{
+  .popular-collections > button {
     margin-top: 15px;
+  }
+  .bottom-banner{
+    flex-direction: column-reverse;
+    flex: 1;
+    row-gap: 30px;
+    margin: 50px 30px 50px;
+  }
+  .bottom-banner .bottom-banner-description{
+    width: 100%;
+    margin: 20px;
+    text-align: center;
+  }
+  .bottom-banner img{
+    width: 100%;
   }
 }

@@ -212,6 +212,34 @@ bottom banner starts here
 /* .......................
 bottom banner ends here 
 .......................... */
+/* ...............
+footer section starts here
+....................... */
+footer{
+  padding: 50px 0px;
+  background-color: #0A0826;
+  color: white;
+  text-align: center;
+  line-height: 30px;
+}
+footer button {
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color:white;
+  background-color: #28263f;
+}
+footer h3{
+  font-size: 24px;
+}
+footer p{
+  font-size: 14px;
+}
+
+/* ................
+footer section ends here 
+.................. */
 /* .................
 Media Queries 
 ............................*/

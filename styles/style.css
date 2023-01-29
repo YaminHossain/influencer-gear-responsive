@@ -86,9 +86,99 @@ banner section
 banner section done
 ...................... */
 
+/* ..............
+sponsors section
+................. */
+.sponsors {
+  display: flex;
+  justify-content: space-between;
+  margin: 100px 165px;
+  border: 1px solid #e6e6e6;
+  border-left: 0px;
+  border-right: 0px;
+  padding: 36px 61px;
+}
+/* ................
+sponsor section ends here */
 /* .........................
-Media Queries
-............................ */
+
+/* .................
+collections section starts here
+.............. */
+.popular-collections-heading {
+  font-weight: 600;
+  font-size: 28px;
+  color: #3a3a3a;
+  margin-bottom: 30px;
+  text-align: center;
+}
+.one-collection .collection-head {
+  font-weight: 500;
+  font-size: 28px;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 6px;
+}
+.one-collection img {
+  width: 300px;
+  height: 256px;
+  margin-bottom: 16px;
+}
+.one-collection .collection-money {
+  font-weight: 400;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.87);
+}
+.one-collection .rating {
+  display: inline;
+  color: #f5b43c;
+  margin-right: 5px;
+  width: 16px;
+  height: 16px;
+}
+.one-collection span {
+  color: #5e6366;
+  font-weight: 700;
+  font-size: 14px; 
+}
+.one-collection .collection-description {
+  color: #5e6366;
+  margin-top: 6px;
+}
+.collections {
+  display: grid;
+  grid-template-columns: repeat(3,auto);
+  gap: 30px;
+  justify-content: center;
+}
+.one-collection {
+  width: 329px;
+  height: 476px;
+  background: #ffffff;
+  box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.15);
+  border-radius: 5px;
+  padding: 17px 15px;
+  cursor: pointer;
+}
+.popular-collections>button{
+  border: none;
+  background-color: #e02c6d;
+  border-radius: 41px;
+  padding: 10px 24px;
+  color: white;
+  width: 196px;
+  height: 44px;
+  font-weight: 700;
+  font-size: 16px;
+  display: block;
+  margin:50px auto 0px;
+} 
+/* ..................
+collection section done
+....................... */
+
+/* .................
+Media Queries 
+............................*/
 @media screen and (max-width: 576px) {
   .hidden {
     display: none;
@@ -104,27 +194,48 @@ Media Queries
     padding: 22px 20px 50px;
     gap: 14px;
   }
-  .banner-image{
+  .banner-image {
     background-size: contain;
     background-repeat: no-repeat;
   }
-  .banner-image img{
+  .banner-image img {
     width: 100%;
   }
-  .banner-head{
-  width: 100%;
+  .banner-head {
+    width: 100%;
   }
   .banner-head h1 {
     font-size: 28px;
-  margin-bottom: 15px;  
-  text-align: center;  
-  }
-  .banner-head p{
     margin-bottom: 15px;
     text-align: center;
   }
-  .banner-head button{
+  .banner-head p {
+    margin-bottom: 15px;
+    text-align: center;
+  }
+  .banner-head button {
     margin: 0px auto 50px;
     display: block;
+  }
+  .sponsors {
+    flex-wrap: wrap;
+    margin: 0px 42px 50px;
+    padding: 10px;
+    row-gap: 25px;
+    justify-content: space-around;
+  }
+  .sponsors-logo {
+    height: 20px;
+  }
+  .collections{
+    grid-template-columns: 1fr;
+    gap: 15px;
+    margin: 0px 15px;
+  }
+  .collections .one-collection{
+    margin: 0px auto;
+  }
+  .popular-collections>button{
+    margin-top: 15px;
   }
 }
